@@ -1,0 +1,745 @@
+/* Typography - Choose your font and size (base.css default is 16px) */
+body {
+	font-size:80%;
+	line-height:1.5em;
+	font-family:Helvetica,"Helvetica Neue",Arial,sans-serif;
+    background: #EFEFEF url(../images/bg.png);
+}
+/*IE*/
+html>body{font-size:13px}
+pre,code {font-family:"DejaVu Sans Mono","Bitstream Vera Sans Mono",Monaco,"Courier New",monospace;}
+header, #main, footer { float: left; width: 100%;  }
+#main { margin: 0;}
+
+a { text-decoration: none; color: #4B6E89;font-weight: bold; }
+a:hover { color: #000; cursor: pointer; }
+
+hr {border:0; border-bottom: 1px #aaa solid;}
+
+header {
+  margin-left:20px;
+  hr {
+    margin:0 auto;
+    padding:0 0 10px 0;
+    border-bottom:1px solid #eeeeee;
+    width:930px;
+    margin-top:20px;
+  }
+  h1 {
+    a {
+      color:#444444;
+      margin:0;
+      line-height:70px;
+      font-weight:normal;
+      text-shadow:0px 0px 3px #000000;
+    }
+  }
+}
+nav ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  li {
+    margin:1em 2em 0 0;
+    display:inline;
+    float:right;
+    a:hover {
+      color:#e51400;
+    }
+    a {
+      line-height:100px;
+      line-height:24px;
+      font-family:"Segoe WPC", "Segoe UI", Helvetica, Arial, Verdana, "Arial Unicode MS", Sans-Serif;
+      font-size:18px;
+      font-weight:normal;
+      text-decoration:none;
+      color:#333333;
+    }
+  }
+}
+
+#content, .content {
+  background:#ffffff;
+  padding:10px 20px;
+}
+#sidebar {
+  background:#ffffff;
+  background:#ffffff;
+  padding:10px 20px;
+  padding:10px 14px;
+  border-left:1px solid #eeeeee;
+  h3 {
+    margin-bottom:5px;
+  }
+  ul {
+    margin:0;
+    li {
+      list-style:none;
+      border-bottom:1px solid #eeeeee;
+      line-height:2.4em;
+    }
+    li:hover {
+      background:#f8f8f8;
+    }
+  }
+}
+#content h1 {
+  font-size:22px;
+}
+
+
+footer {
+  padding:1em 0;
+  color:#999999;
+  font-size:12px;
+  .stats {
+    text-align:right;
+  }
+}
+form.formstyle label {
+  margin:0px;
+  display:inline;
+  line-height:2em;
+  float:left;
+  width:100%;
+  b {
+    float:left;
+  }
+  span {
+    color:#999999;
+    display:block;
+    font-size:12px;
+    float:right;
+    text-align:right;
+  }
+}
+form.formstyle .form_error {
+  color:#e83d1b;
+  font-weight:bold;
+  margin:-1.5em 0 1.5em 0;
+}
+
+/* Messages Boxes use the great Silk icons from http://famfamfam.com/ */
+.message, .warning, .error, .success
+{
+    margin: 1em auto;
+    display: block;
+    clear: both;
+    padding: .8em 50px;
+	border: 1px solid #fff;
+}
+.message
+{
+    background: #F8FAFC url(../images/message.png) 20px center no-repeat;
+    border-color: #B5D4FE;
+}
+.warning
+{
+    background: #fff6bf url(../images/warning.png) 20px center no-repeat;
+    border-color: #ffd324;
+}
+.error
+{
+    background: #fde6e9 url(../images/error.png) 20px center no-repeat;
+    border-color: #fb939f;
+}
+.success
+{
+    background: #EBFCE1 url(../images/success.png) 20px center no-repeat;
+    border-color: #B9DAA6;
+}
+.header a {font-size: 12px; vertical-align: top;}
+.header {
+	background: #f0f0f0;
+	width: 101.6%;
+	position: relative;
+	left: -2.1%;
+	top: -6px;
+	padding: 2px 10px;
+	border-radius: 4px 4px 0 0;
+}
+.grid_4 .header, .grid_5 .header, .grid_6 .header {
+	background: #f0f0f0;
+	width: 103%;
+	position: relative;
+	left: -4%;
+	top: -6px;
+	padding: 2px 10px;
+	border-radius: 4px 4px 0 0;
+}
+
+.left {float: left !important;}
+.userBlock {
+  padding:5px 5px 0 5px;
+  width:300px;
+  float:left;
+  position:relative;
+  -webkit-transition:all .1s ease-out;
+  -moz-transition:all .1s ease-out;
+  -o-transition:all .1s ease-out;
+  a {
+    color:black;
+    text-decoration:none;
+    display:block;
+    cursor:pointer;
+  }
+  .userBlockLeft {
+    width:120px;
+    position:relative;
+  }
+}
+.userBlockSmall {
+  padding:5px 5px 0 5px;
+  padding:5px;
+  width:300px;
+  width:220px;
+  float:left;
+  position:relative;
+  -webkit-transition:all .1s ease-out;
+  -moz-transition:all .1s ease-out;
+  -o-transition:all .1s ease-out;
+  border:1px #cccccc solid;
+  margin:4px 8px 4px 0px;
+  box-shadow:1px 1px 3px #aaaaaa;
+  .avatarAge {
+    top:26px;
+    left:59px;
+  }
+}
+.userBlockSmall:hover {
+  background:#eeeeee;
+}
+.userBlock.female:hover {
+  span .userBlockSmall.female:hover span {
+    background-color:#f975c4;
+    color:#ffffff;
+  }
+}
+.userBlock:hover .name.fcfemale {
+  color:#ffffff !important;
+}
+.userBlock .name, .userBlockSmall .name {
+  font-size:18px;
+  font-weight:normal;
+  color:#e51400;
+}
+.pt4 {
+  display:block;
+  height:44px;
+  overflow:hidden;
+  font-weight:normal;
+  padding-left:10px;
+  .fs12 {
+    padding-left:22px;
+  }
+}
+.pt5 {
+  display:block;
+  height:120px;
+  overflow:hidden;
+  font-weight:normal;
+}
+.avatarAge {
+  font-size:11px;
+  font-weight:bold;
+  position:absolute;
+  text-shadow:0 1px 0 rgba(0,0,0,0.25);
+  border-radius:4px;
+  padding:0 3px;
+  background:#f975c4;
+  color:#ffffff;
+  top:92px;
+  left:94px;
+}
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.picture {
+  padding:3px;
+  margin:0;
+  border:1px solid #bbbbbb;
+  line-height:12px;
+  border-radius:4px;
+  background:#ffffff;
+}
+.picture:hover {
+  padding:0;
+  border:4px solid #bbccdd;
+}
+.user_stats {
+  border:1px #b5d4fe solid;
+  padding:5px 0;
+  background:#fafafa;
+  border-radius:6px;
+  li {
+    width:400px;
+    clear:both;
+    height:20px;
+    list-style-type:none;
+    margin:0;
+    padding:2px 5px;
+    list-style:none;
+    margin-top:-1px;
+  }
+  span {
+    width:40%;
+    height:20px;
+    float:left;
+    list-style-type:none;
+    margin:0;
+    padding:0 5px;
+    margin-top:-1px;
+  }
+}
+#content .editable input {
+  display:inline !important;
+  width:240px;
+}
+#content input {
+  padding:2px;
+  margin:2px;
+}
+.normalfont {
+  font-size:13px !important;
+}
+.greenfont {
+  color:#2dc800;
+}
+.double_quote {
+  display:inline-block;
+  margin:0 5px -5px;
+  font-size:30px;
+  font-weight:bold;
+  vertical-align:middle;
+  color:#cccccc;
+}
+.comment {
+  width:630px;
+}
+.pointer:hover {
+  cursor:pointer;
+}
+.redbox {
+  padding:20px 10px 10px 10px;
+  background:#ffffff;
+  h2 {
+    width:100%;
+    font-size:16px;
+    font-weight:bold;
+    padding:4px 10px 4px 10px;
+    margin:-20px 0 8px -10px;
+  }
+}
+ul.feed {
+  list-style-type:none;
+  li {
+    border-bottom:1px dashed #aaaaaa;
+    margin:0 0 0.6em 0;
+    color:black;
+    a {
+      font-weight:normal;
+    }
+    .avatar {
+      float:left;
+      border:1px solid #cccccc;
+      height:100px;
+      width:100px;
+      margin:0 12px 5px 0;
+      -moz-box-shadow:0 2px 4px #e9e9e9;
+      -webkit-box-shadow:0 2px 4px #e9e9e9;
+    }
+  }
+}
+.gform select {
+  border:1px solid #aaaaaa;
+  margin:3px;
+}
+.gform input {
+  border:1px solid #aaaaaa;
+  padding:5px 12px;
+  margin:3px;
+}
+.blacktab {
+  background:url('../images/blacktab.png') repeat-x 50% 100%;
+  color:#ffffff;
+  text-transform:uppercase;
+  font-family:verdana;
+  font-size:10px;
+  font-weight:bold;
+  padding:12px 5px;
+  line-height:25px;
+  float:left;
+}
+.blacktab.selected {
+  background:url('../images/blacktab_arrow.png') repeat-x 50% 100%;
+  width:78px;
+}
+/* ------------------------------------------------------------------------------------------------------------- BUTTON */
+.uibutton {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    display: inline-block;
+    padding: 0.3em 1.9em 0.375em 1.9em;
+    border: 1px solid #999;
+    border-bottom-color: #888;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+    white-space: nowrap;
+    cursor: pointer;
+    /* outline: none; */
+    color: #333;
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f6f6), to(#e4e4e3));
+    background-image: -moz-linear-gradient(#f5f6f6, #e4e4e3);
+    background-image: -o-linear-gradient(#f5f6f6, #e4e4e3);
+    background-image: linear-gradient(#f5f6f6, #e4e4e3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f6f6', EndColorStr='#e4e4e3'); /* for IE 6 - 9 */
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #fff;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+}
+.uibutton:hover,.uibutton:focus,.uibutton:active {border-color: #777 #777 #666;}
+.uibutton:active, .uibutton:disabled {border-color: #aaa;background: #ddd;filter: none;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
+.uibutton:disabled {cursor:default;}
+/* overrides extra padding on button elements in Firefox */
+.uibutton::-moz-focus-inner {padding: 0;border: 0;}
+
+.uibutton.blue:active {border-color: #29447E;background: #4F6AA3;filter: none;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
+.uibutton.blue {
+    border-color: #29447E #29447E #1A356E;
+    color: #fff;
+    background-color: #5B74A8;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#637bad), to(#5872a7));
+    background-image: -moz-linear-gradient(#637bad, #5872a7);
+    background-image: -o-linear-gradient(#637bad, #5872a7);
+    background-image: linear-gradient(#637bad, #5872a7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#637bad', EndColorStr='#5872a7'); /* for IE 6 - 9 */
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #8a9cc2;
+}
+.uibutton.green:active {border-color: #3B6E22;background: #609946;filter: none;-webkit-box-shadow: none;-moz-box-shadow: none;box-shadow: none;}
+.uibutton.green {
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    color: #fff;
+    background-color: #69A74E;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#75ae5c), to(#67a54b));
+    background-image: -moz-linear-gradient(#75ae5c, #67a54b);
+    background-image: -o-linear-gradient(#75ae5c, #67a54b);
+    background-image: linear-gradient(#75ae5c, #67a54b);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#75ae5c', EndColorStr='#67a54b'); /* for IE 6 - 9 */
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 #98c286;
+}
+.uibutton-group {display: inline-block;list-style: none;padding: 0;margin: 0;/* IE hacks */zoom: 1; *display: inline;}
+.uibutton + .uibutton,.uibutton + .uibutton-group,.uibutton-group + .uibutton,.uibutton-group + .uibutton-group {margin-left: 3px;}
+.uibutton-group li {float: left;padding: 0;margin: 0;}
+.uibutton-group .uibutton {float: left;margin-left: -1px; }
+.uibutton-group .uibutton:hover,.uibutton-group .uibutton:focus,.uibutton-group .uibutton:active {z-index:2;}
+.uibutton-group > .uibutton:first-child,
+.uibutton-group li:first-child .uibutton { margin-left: 0; }
+.uibutton.icon {
+	padding: 0.3em 1.9em 0.375em 0.8em;
+}
+.uibutton.icon:before {
+    content: "";
+    position: relative;
+    top: 1px;
+    float:left;
+    width: 10px;
+    height: 12px;
+    margin: 0 0.5em 0 0;
+    background: url(../images/mini_icons.png) 99px 99px no-repeat;
+}
+.uibutton.edit:before  { background-position: 0 0; }
+.uibutton.add:before  { background-position: -10px 0; }
+.uibutton.secure:before  { background-position: -20px 0; }
+.uibutton.prev:before  { background-position: -30px 0; }
+.uibutton.next:before  { float:right; margin: 0 -0.25em 0 0.5em; background-position: -40px 0; }
+.uibutton-toolbar {padding: 6px;border-top: 1px solid #ccc;background: #f2f2f2;}
+.uibutton-toolbar .uibutton,.uibutton-toolbar .uibutton-group {vertical-align: bottom;}
+
+
+/* ------------------------ NEW GMAIL LOOK BUTTONS ---------------------------------------- */
+.gbutton:hover {
+    color:#333;
+    border-color:#999;
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.gbutton {
+    padding: 7px 16px;
+    color: #6E6E6E;
+    font: bold 12px Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 1px 0 white;
+    background: -webkit-gradient(linear,0% 40%,0% 70%,from(whiteSmoke),to(#F1F1F1));
+    background: -moz-linear-gradient(linear,0% 40%,0% 70%,from(whiteSmoke),to(#F1F1F1));
+    border: solid 1px gainsboro;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    cursor: pointer;
+}
+
+.gbutton.save {
+    background: url(../images/disk.png) 10px 7px no-repeat #F3F3F3;
+    padding-left: 30px;
+}
+.gbutton.add {
+    background: url(../images/add.png) 10px 7px no-repeat #F3F3F3;
+    padding-left: 30px;
+}
+/* ------------------------------------------------------------------------------------------------------------- end */
+
+.pagination-clean li{
+    border:0; margin:0; padding:0;
+    font-size:11px;
+    list-style:none;
+    cursor: pointer;
+}
+.pagination-clean a, .pagination-clean span {
+    margin-right:2px;
+    float:left;
+    display:block;
+    font-weight:bold;
+    padding:3px 6px;
+    text-decoration:none;
+    border: 1px solid #36f;
+    border-radius:4px;
+    background: #36f;
+    color:#fff;
+}
+
+.pagination-clean .active{
+    color:#000;
+    background: #eee;
+    cursor: default;
+}
+.pagination-clean a:link,
+.pagination-clean a:visited {
+    float:left;
+    padding:3px 6px;
+
+}
+.pagination-clean a:hover {
+    text-decoration:none;
+    background: #48f;
+    color:#fff;
+}
+
+/* ---------------- OsX icons --------------- */
+a.icon1 span {background:url(../images/button-icons.png) -0px -36px;}
+a.icon2 span {background:url(../images/button-icons.png) -36px -36px;}
+a.icon3 span {background:url(../images/button-icons.png) -72px -36px;}
+a.icon4 span {background:url(../images/button-icons.png) -108px -36px;}
+a.icon5 span {background:url(../images/button-icons.png) -144px -36px;}
+a.icon6 span {background:url(../images/button-icons.png) -180px -36px;}
+a.icon7 span {background:url(../images/button-icons.png) -216px -36px;}
+a.icon8 span {background:url(../images/button-icons.png) -252px -36px;}
+a.icon9 span {background:url(../images/button-icons.png) -288px -36px;}
+a.icon10 span {background:url(../images/button-icons.png) -324px -36px;}
+a.icon11 span {background:url(../images/button-icons.png) -0px -72px;}
+a.icon12 span {background:url(../images/button-icons.png) -36px -72px;}
+a.icon13 span {background:url(../images/button-icons.png) -72px -72px;}
+a.icon14 span {background:url(../images/button-icons.png) -108px -72px;}
+a.icon15 span {background:url(../images/button-icons.png) -144px -72px;}
+a.icon16 span {background:url(../images/button-icons.png) -180px -72px;}
+a.icon17 span {background:url(../images/button-icons.png) -216px -72px;}
+a.icon18 span {background:url(../images/button-icons.png) -252px -72px;}
+a.icon19 span {background:url(../images/button-icons.png) -288px -72px;}
+a.icon20 span {background:url(../images/button-icons.png) -324px -72px;}
+a.icon21 span {background:url(../images/button-icons.png) -0px -108px;}
+a.icon22 span {background:url(../images/button-icons.png) -36px -108px;}
+a.icon23 span {background:url(../images/button-icons.png) -72px -108px;}
+a.icon24 span {background:url(../images/button-icons.png) -108px -108px;}
+a.icon25 span {background:url(../images/button-icons.png) -144px -108px;}
+a.icon26 span {background:url(../images/button-icons.png) -180px -108px;}
+a.icon27 span {background:url(../images/button-icons.png) -216px -108px;}
+a.icon28 span {background:url(../images/button-icons.png) -252px -108px;}
+a.icon29 span {background:url(../images/button-icons.png) -288px -108px;}
+a.icon30 span {background:url(../images/button-icons.png) -324px -108px;}
+a.icon31 span {background:url(../images/button-icons.png) -0px -144px;}
+a.icon32 span {background:url(../images/button-icons.png) -36px -144px;}
+a.icon33 span {background:url(../images/button-icons.png) -72px -144px;}
+a.icon34 span {background:url(../images/button-icons.png) -108px -144px;}
+a.icon35 span {background:url(../images/button-icons.png) -144px -144px;}
+a.icon36 span {background:url(../images/button-icons.png) -180px -144px;}
+a.icon37 span {background:url(../images/button-icons.png) -216px -144px;}
+a.icon38 span {background:url(../images/button-icons.png) -252px -144px;}
+a.icon39 span {background:url(../images/button-icons.png) -288px -144px;}
+a.icon40 span {background:url(../images/button-icons.png) -324px -144px;}
+a.icon41 span {background:url(../images/button-icons.png) -0px -180px;}
+a.icon42 span {background:url(../images/button-icons.png) -36px -180px;}
+a.icon43 span {background:url(../images/button-icons.png) -72px -180px;}
+a.icon44 span {background:url(../images/button-icons.png) -108px -180px;}
+a.icon45 span {background:url(../images/button-icons.png) -144px -180px;}
+a.icon46 span {background:url(../images/button-icons.png) -180px -180px;}
+a.icon47 span {background:url(../images/button-icons.png) -216px -180px;}
+a.icon48 span {background:url(../images/button-icons.png) -252px -180px;}
+a.icon49 span {background:url(../images/button-icons.png) -288px -180px;}
+a.icon50 span {background:url(../images/button-icons.png) -324px -180px;}
+a.icon51 span {background:url(../images/button-icons.png) -0px -216px;}
+a.icon52 span {background:url(../images/button-icons.png) -36px -216px;}
+a.icon53 span {background:url(../images/button-icons.png) -72px -216px;}
+a.icon54 span {background:url(../images/button-icons.png) -108px -216px;}
+a.icon55 span {background:url(../images/button-icons.png) -144px -216px;}
+a.icon56 span {background:url(../images/button-icons.png) -180px -216px;}
+a.icon57 span {background:url(../images/button-icons.png) -216px -216px;}
+a.icon58 span {background:url(../images/button-icons.png) -252px -216px;}
+a.icon59 span {background:url(../images/button-icons.png) -288px -216px;}
+a.icon60 span {background:url(../images/button-icons.png) -324px -216px;}
+a.icon61 span {background:url(../images/button-icons.png) -0px -252px;}
+a.icon62 span {background:url(../images/button-icons.png) -36px -252px;}
+a.icon63 span {background:url(../images/button-icons.png) -72px -252px;}
+a.icon64 span {background:url(../images/button-icons.png) -108px -252px;}
+a.icon65 span {background:url(../images/button-icons.png) -144px -252px;}
+a.icon66 span {background:url(../images/button-icons.png) -180px -252px;}
+a.icon67 span {background:url(../images/button-icons.png) -216px -252px;}
+a.icon68 span {background:url(../images/button-icons.png) -252px -252px;}
+a.icon69 span {background:url(../images/button-icons.png) -288px -252px;}
+a.icon70 span {background:url(../images/button-icons.png) -324px -252px;}
+a.icon71 span {background:url(../images/button-icons.png) -0px -288px;}
+a.icon72 span {background:url(../images/button-icons.png) -36px -288px;}
+a.icon73 span {background:url(../images/button-icons.png) -72px -288px;}
+a.icon74 span {background:url(../images/button-icons.png) -108px -288px;}
+a.icon75 span {background:url(../images/button-icons.png) -144px -288px;}
+a.icon76 span {background:url(../images/button-icons.png) -180px -288px;}
+a.icon77 span {background:url(../images/button-icons.png) -216px -288px;}
+a.icon78 span {background:url(../images/button-icons.png) -252px -288px;}
+a.icon79 span {background:url(../images/button-icons.png) -288px -288px;}
+a.icon80 span {background:url(../images/button-icons.png) -324px -288px;}
+a.icon81 span {background:url(../images/button-icons.png) -0px -324px;}
+a.icon82 span {background:url(../images/button-icons.png) -36px -324px;}
+a.icon83 span {background:url(../images/button-icons.png) -72px -324px;}
+a.icon84 span {background:url(../images/button-icons.png) -108px -324px;}
+a.icon85 span {background:url(../images/button-icons.png) -144px -324px;}
+a.icon86 span {background:url(../images/button-icons.png) -180px -324px;}
+a.icon87 span {background:url(../images/button-icons.png) -216px -324px;}
+a.icon88 span {background:url(../images/button-icons.png) -252px -324px;}
+a.icon89 span {background:url(../images/button-icons.png) -288px -324px;}
+a.icon90 span {background:url(../images/button-icons.png) -324px -324px;}
+a.icon91 span {background:url(../images/button-icons.png) -0px -360px;}
+a.icon92 span {background:url(../images/button-icons.png) -36px -360px;}
+a.icon93 span {background:url(../images/button-icons.png) -72px -360px;}
+a.icon94 span {background:url(../images/button-icons.png) -108px -360px;}
+a.icon95 span {background:url(../images/button-icons.png) -144px -360px;}
+a.icon96 span {background:url(../images/button-icons.png) -180px -360px;}
+a.icon97 span {background:url(../images/button-icons.png) -216px -360px;}
+a.icon98 span {background:url(../images/button-icons.png) -252px -360px;}
+a.icon99 span {background:url(../images/button-icons.png) -288px -360px;}
+a.icon100 span {background:url(../images/button-icons.png) -324px -360px;}
+a.icon101 span {background:url(../images/button-icons.png) -0px -396px;}
+a.icon102 span {background:url(../images/button-icons.png) -36px -396px;}
+a.icon103 span {background:url(../images/button-icons.png) -72px -396px;}
+a.icon104 span {background:url(../images/button-icons.png) -108px -396px;}
+a.icon105 span {background:url(../images/button-icons.png) -144px -396px;}
+a.icon106 span {background:url(../images/button-icons.png) -180px -396px;}
+a.icon107 span {background:url(../images/button-icons.png) -216px -396px;}
+a.icon108 span {background:url(../images/button-icons.png) -252px -396px;}
+a.icon109 span {background:url(../images/button-icons.png) -288px -396px;}
+a.icon110 span {background:url(../images/button-icons.png) -324px -396px;}
+a.icon111 span {background:url(../images/button-icons.png) -0px -432px;}
+a.icon112 span {background:url(../images/button-icons.png) -36px -432px;}
+a.icon113 span {background:url(../images/button-icons.png) -72px -432px;}
+a.icon114 span {background:url(../images/button-icons.png) -108px -432px;}
+a.icon115 span {background:url(../images/button-icons.png) -144px -432px;}
+a.icon116 span {background:url(../images/button-icons.png) -180px -432px;}
+a.icon117 span {background:url(../images/button-icons.png) -216px -432px;}
+a.icon118 span {background:url(../images/button-icons.png) -252px -432px;}
+a.icon119 span {background:url(../images/button-icons.png) -288px -432px;}
+a.icon120 span {background:url(../images/button-icons.png) -324px -432px;}
+a.icon121 span {background:url(../images/button-icons.png) -0px -468px;}
+a.icon122 span {background:url(../images/button-icons.png) -36px -468px;}
+a.icon123 span {background:url(../images/button-icons.png) -72px -468px;}
+a.icon124 span {background:url(../images/button-icons.png) -108px -468px;}
+a.icon125 span {background:url(../images/button-icons.png) -144px -468px;}
+a.icon126 span {background:url(../images/button-icons.png) -180px -468px;}
+a.icon127 span {background:url(../images/button-icons.png) -216px -468px;}
+a.icon128 span {background:url(../images/button-icons.png) -252px -468px;}
+a.icon129 span {background:url(../images/button-icons.png) -288px -468px;}
+a.icon130 span {background:url(../images/button-icons.png) -324px -468px;}
+a.icon131 span {background:url(../images/button-icons.png) -0px -504px;}
+a.icon132 span {background:url(../images/button-icons.png) -36px -504px;}
+a.icon133 span {background:url(../images/button-icons.png) -72px -504px;}
+a.icon134 span {background:url(../images/button-icons.png) -108px -504px;}
+a.icon135 span {background:url(../images/button-icons.png) -144px -504px;}
+a.icon136 span {background:url(../images/button-icons.png) -180px -504px;}
+a.icon137 span {background:url(../images/button-icons.png) -216px -504px;}
+a.icon138 span {background:url(../images/button-icons.png) -252px -504px;}
+a.icon139 span {background:url(../images/button-icons.png) -288px -504px;}
+a.icon140 span {background:url(../images/button-icons.png) -324px -504px;}
+a.icon141 span {background:url(../images/button-icons.png) -0px -540px;}
+a.icon142 span {background:url(../images/button-icons.png) -36px -540px;}
+a.icon143 span {background:url(../images/button-icons.png) -72px -540px;}
+a.icon144 span {background:url(../images/button-icons.png) -108px -540px;}
+a.icon145 span {background:url(../images/button-icons.png) -144px -540px;}
+a.icon146 span {background:url(../images/button-icons.png) -180px -540px;}
+a.icon147 span {background:url(../images/button-icons.png) -216px -540px;}
+a.icon148 span {background:url(../images/button-icons.png) -252px -540px;}
+a.icon149 span {background:url(../images/button-icons.png) -288px -540px;}
+a.icon150 span {background:url(../images/button-icons.png) -324px -540px;}
+a.icon151 span {background:url(../images/button-icons.png) -0px -576px;}
+a.icon152 span {background:url(../images/button-icons.png) -36px -576px;}
+a.icon153 span {background:url(../images/button-icons.png) -72px -576px;}
+a.icon154 span {background:url(../images/button-icons.png) -108px -576px;}
+a.icon155 span {background:url(../images/button-icons.png) -144px -576px;}
+a.icon156 span {background:url(../images/button-icons.png) -180px -576px;}
+a.icon157 span {background:url(../images/button-icons.png) -216px -576px;}
+a.icon158 span {background:url(../images/button-icons.png) -252px -576px;}
+a.icon159 span {background:url(../images/button-icons.png) -288px -576px;}
+a.icon160 span {background:url(../images/button-icons.png) -324px -576px;}
+a.icon161 span {background:url(../images/button-icons.png) -0px -612px;}
+a.icon162 span {background:url(../images/button-icons.png) -36px -612px;}
+a.icon163 span {background:url(../images/button-icons.png) -72px -612px;}
+a.icon164 span {background:url(../images/button-icons.png) -108px -612px;}
+a.icon165 span {background:url(../images/button-icons.png) -144px -612px;}
+a.icon166 span {background:url(../images/button-icons.png) -180px -612px;}
+a.icon167 span {background:url(../images/button-icons.png) -216px -612px;}
+a.icon168 span {background:url(../images/button-icons.png) -252px -612px;}
+a.icon169 span {background:url(../images/button-icons.png) -288px -612px;}
+a.icon170 span {background:url(../images/button-icons.png) -324px -612px;}
+a.icon171 span {background:url(../images/button-icons.png) -0px -648px;}
+a.icon172 span {background:url(../images/button-icons.png) -36px -648px;}
+a.icon173 span {background:url(../images/button-icons.png) -72px -648px;}
+a.icon174 span {background:url(../images/button-icons.png) -108px -648px;}
+a.icon175 span {background:url(../images/button-icons.png) -144px -648px;}
+a.icon176 span {background:url(../images/button-icons.png) -180px -648px;}
+a.icon177 span {background:url(../images/button-icons.png) -216px -648px;}
+a.icon178 span {background:url(../images/button-icons.png) -252px -648px;}
+a.icon179 span {background:url(../images/button-icons.png) -288px -648px;}
+a.icon180 span {background:url(../images/button-icons.png) -324px -648px;}
+a.icon181 span {background:url(../images/button-icons.png) -0px -684px;}
+a.icon182 span {background:url(../images/button-icons.png) -36px -684px;}
+a.icon183 span {background:url(../images/button-icons.png) -72px -684px;}
+a.icon184 span {background:url(../images/button-icons.png) -108px -684px;}
+a.icon185 span {background:url(../images/button-icons.png) -144px -684px;}
+a.icon186 span {background:url(../images/button-icons.png) -180px -684px;}
+a.icon187 span {background:url(../images/button-icons.png) -216px -684px;}
+a.icon188 span {background:url(../images/button-icons.png) -252px -684px;}
+a.icon189 span {background:url(../images/button-icons.png) -288px -684px;}
+a.icon190 span {background:url(../images/button-icons.png) -324px -684px;}
+a.icon191 span {background:url(../images/button-icons.png) -0px -720px;}
+a.icon192 span {background:url(../images/button-icons.png) -36px -720px;}
+a.icon193 span {background:url(../images/button-icons.png) -72px -720px;}
+a.icon194 span {background:url(../images/button-icons.png) -108px -720px;}
+a.icon195 span {background:url(../images/button-icons.png) -144px -720px;}
+a.icon196 span {background:url(../images/button-icons.png) -180px -720px;}
+a.icon197 span {background:url(../images/button-icons.png) -216px -720px;}
+a.icon198 span {background:url(../images/button-icons.png) -252px -720px;}
+a.icon199 span {background:url(../images/button-icons.png) -288px -720px;}
+a.icon200 span {background:url(../images/button-icons.png) -324px -720px;}

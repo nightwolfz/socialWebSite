@@ -1,0 +1,20 @@
+#======= Set rewriting options ==================
+
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^index([^/.]+)$ /index.html [QSA,L]
+
+#======= Rewrite the rest to index.php =========
+RewriteRule ^user/([a-zA-Z0-9\._\-]+)/?([^/.]+)?$ /index.php\?controller=users&action=index&params=$1/$2 [QSA,L]
+#RewriteRule ^open-inviter/([.*]+)$ /models/open-inviter/ [QSA,L]
+
+RewriteRule ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([^/.]+)/([^/.]+)$ /index.php\?controller=$1&action=$2&params=$3 [QSA,L]
+RewriteRule ^([A-Za-z0-9-]+)/([^/.]+)/([^/.]+)$ /index.php\?controller=$1&action=$2&params=$3 [QSA,L]
+RewriteRule ^([A-Za-z0-9-]+)/([^/.]+)$ /index.php\?controller=$1&action=$2 [QSA,L]
+RewriteRule ^([A-Za-z0-9-]+)/?$ /index.php\?controller=$1 [QSA,L]

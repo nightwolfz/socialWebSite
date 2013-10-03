@@ -1,0 +1,85 @@
+body {
+    background:#fcfcfc;
+    padding:8px 20px 4px 0px;margin:0;
+    font-size: 14px;
+    font-family: "Segoe UI", "Segoe WP", "Helvetica Neue", 'RobotoRegular', sans-serif;
+}
+#container {width:980px;}
+section {
+    background: #fff;
+    padding:8px 14px 8px 14px;
+    margin:8px 0px 8px 14px;
+    float:left;
+}
+section#mainleft {width:30%;}
+section#mainright {width:60%;}
+
+ul, div {padding:0;margin:0;clear:both;}
+nav a {color:#000;}
+nav a:hover {color:#e51400;}
+nav a {
+    float: left;
+    list-style-type: none;
+    padding: 0 14px;
+    cursor:pointer;
+}
+#top-nav a {border-left:1px solid #555;}
+#top-nav a:hover {color:#e51400;}
+#top-nav a:first-child {border-left:0 !important;}
+#top-nav {
+    font-size: 11px;
+    font-family: 'Segoe UI', Trebuchet, Arial, sans-serif;
+    float:right;
+}
+#main-nav-top {
+    font-size: 14px;
+    font-family: Segoe UI, Segoe WP, Helvetica Neue, Roboto, sans-serif;
+    margin-bottom: 10px;
+}
+#main-nav-bottom b {
+    color:#000;
+    font-size: 20px;
+    line-height: 16px;
+}
+#main-nav-bottom {
+    color:#656547;
+    font-size: 18px;
+    font-family: Segoe UI, Segoe WP, Helvetica Neue, Roboto, sans-serif;
+    line-height: 20px;
+}
+h1, h2, h3, h4 {
+    font-family: "Segoe UI Light", "Helvetica Neue", 'RobotoLight', "Segoe UI", "Segoe WP", sans-serif;
+    font-weight: 100;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-transform: lowercase;
+}
+
+/* pictures & avatars */
+.userName {color:#333; width:80px; text-align: center;}
+
+
+/* frequently used */
+.left {float:left !important;}
+.blue {color: #1BA1E2}
+.lime {color: #8CBF26}
+.brown{color:#a05000}
+.green{color:#393}
+.magenta{color:#ff0097}
+.orange{color:#f09609}
+.pink{color:#e671b8}
+.purple{color:#a200ff}
+.red{color:#e51400}
+.teal{color:#00aba9}
+.whitebg{background-color:#fff}
+.blackbg{background-color:#000}
+.bluebg{background-color:#1ba1e2}
+.brownbg{background-color:#a05000}
+.greenbg{background-color:#393}
+.limebg{background-color:#8cbf26}
+.magentabg{background-color:#ff0097}
+.orangebg{background-color:#f09609}
+.pinkbg{background-color:#e671b8}
+.purplebg{background-color:#a200ff}
+.redbg{background-color:#e51400}
+.tealbg{background-color:#00aba9}

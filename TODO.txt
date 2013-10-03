@@ -1,0 +1,29 @@
+ADD - "Latest visitors"
+log users that have viewed your account. We need to create a new "events" or "logs" db table for this.
+
+ADD - "You might like" function
+showing results based on age, location and sexual orientation
+
+ADD - "You recently visited"
+log profiles you have visited. We can use the same table as for "latest visitors"
+
+ADD - "Favorite profiles"
+you'll be able to tag users as "favorite", making it so you can easily access their profile.
+The user that was tagged will be able to view who tagged them, unless the tagger explicitly says
+not to do this.
+
+ADD - "Recent activity"
+we can use the "events/logs" table for this. Will show the latest updates ex: if user updated his mood status,
+his "about me" description, changed/added pictures etc.
+
+ADD - "Who's online"
+we need to be able to fetch online users and to show if someone's online on their profile and such.
+time period 5-15 min from last activity.
+
+ADD - "Who's online to front page"
+generic profiles if not logged in & matching location profiles if logged in.
+
+ADD - "Show mood status updates on the front page"
+
+ADD - "Chat feature"
+Ryan is going to do this using node.js, he already has the whole thing figured out and working.
